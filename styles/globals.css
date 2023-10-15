@@ -57,12 +57,12 @@ a {
   background:  var(--icons-color);
   width: .5rem;
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: feSpotLight) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background: rgb(0, 0, 0);
   }
 }

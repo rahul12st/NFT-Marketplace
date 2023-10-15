@@ -2,7 +2,7 @@
 .profile{
     position: absolute;
     padding: 2rem .5rem;
-    box-shadow: var(--box-shadow);
+   /* box-shadow: var(--box-shadow);*/
     font-size: 1rem;
     width: 20rem;
     border-radius: 1rem;
