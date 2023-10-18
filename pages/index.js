@@ -2,7 +2,8 @@ import React from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
-import { HeroSection,Service,BigNFTSlider,Subscribe,Title,Category,Filter } from "../components/componentsindex";
+import { HeroSection,Service,BigNFTSlider,Subscribe,Title,Category,Filter, NFTCard,DaysComponents } from "../components/componentsindex";
+import Collection from "@/components/Collection/Collection";
 
 const Home = () => {
   return (
@@ -10,13 +11,26 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSlider />
-      <Subscribe />
+      <Title
+         heading="New Collection"
+         paragraph="Discover all the NFTs in world"
+         />
+         <Collection />
+      <Title
+         heading="Featured NFTs"
+         paragraph="Discover the most outstanding NFTs in all topics of life."
+         />
+      <Filter />
       <Title
          heading="Browse by category"
          paragraph="Explore the NFTs in the most featured categories."
          />
+         
          <Category />
-         <Filter />
+         <Subscribe />
+         <NFTCard />
+        
+
     </div>
   );
 };

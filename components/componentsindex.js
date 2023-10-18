@@ -8,5 +8,7 @@ import Title from "./Title/Title";
 import Subscribe from "./Subscribe/Subscribe";
 import Category from "@/components/Category/Category";
 import Filter from "./Filter/Filter";
+import NFTCard from "./NFTCard/NFTCard";
+import DaysComponents from "./Collection/DaysComponents/DaysComponents";
 
-export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter };
+export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents };
