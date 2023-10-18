@@ -10,5 +10,7 @@ import Category from "@/components/Category/Category";
 import Filter from "./Filter/Filter";
 import NFTCard from "./NFTCard/NFTCard";
 import DaysComponents from "./Collection/DaysComponents/DaysComponents";
+import FollowerTab from "./FollowerTab/FollowerTab";
+import Collection from "./Collection/Collection";
 
-export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents };
+export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents,FollowerTab,Collection };

@@ -2,8 +2,9 @@ import React from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
-import { HeroSection,Service,BigNFTSlider,Subscribe,Title,Category,Filter, NFTCard,DaysComponents } from "../components/componentsindex";
-import Collection from "@/components/Collection/Collection";
+import { HeroSection,Service,BigNFTSlider,Subscribe,Title,Category,Filter, NFTCard,DaysComponents,Collection,FollowerTab} from "../components/componentsindex";
+
+
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
          heading="New Collection"
          paragraph="Discover all the NFTs in world"
          />
+         <FollowerTab />
          <Collection />
       <Title
          heading="Featured NFTs"
