@@ -12,5 +12,11 @@ import NFTCard from "./NFTCard/NFTCard";
 import DaysComponents from "./Collection/DaysComponents/DaysComponents";
 import FollowerTab from "./FollowerTab/FollowerTab";
 import Collection from "./Collection/Collection";
+import AudioLive from "./AudioLive/AudioLive";
+import LikeProfile from "./LikeProfile/LikeProfile";
 
-export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents,FollowerTab,Collection };
+
+
+
+
+export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents,FollowerTab,Collection,AudioLive,LikeProfile };
