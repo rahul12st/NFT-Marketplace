@@ -14,9 +14,10 @@ import FollowerTab from "./FollowerTab/FollowerTab";
 import Collection from "./Collection/Collection";
 import AudioLive from "./AudioLive/AudioLive";
 import LikeProfile from "./LikeProfile/LikeProfile";
+import Slider from "./Slider/Slider";
+import Brand from "./Brand/Brand";
+import Video from "./Video/Video";
 
 
 
-
-
-export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents,FollowerTab,Collection,AudioLive,LikeProfile };
+export { Button, Footer, NavBar,HeroSection, Service,BigNFTSlider,Subscribe,Title,Category,Filter,NFTCard,DaysComponents,FollowerTab,Collection,AudioLive,LikeProfile,Slider,Brand,Video };
