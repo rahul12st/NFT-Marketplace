@@ -26,7 +26,7 @@ const discover = [
   },
   {
     name: "Connect wallet",
-    link:"connect wallet"
+    link:"connectWallet"
   },
   {
     name: "blog",
