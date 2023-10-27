@@ -6,15 +6,15 @@ const Discover = () => {
 const discover = [
   {
     name: "Collection",
-    link:"Collection"
+    link:"collection"
   },
   {
     name: "Search",
     link:"search"
   },
   {
-    name: "Author-profile",
-    link:"author-profile"
+    name: "Author",
+    link:"author"
   },
   {
     name: "NFT-Details",

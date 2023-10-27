@@ -18,6 +18,7 @@ const DaysComponents = ({el,i}) => {
             width={500}
             height={300}
             objectFit="covers"
+            
           />
         </div>
 
