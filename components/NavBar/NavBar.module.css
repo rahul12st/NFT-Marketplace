@@ -113,7 +113,7 @@
     top: 0;
     width: 24rem;
     background-color: var(--main-bg-color);
-   /* box-shadow: var(--box-shadow);*/
+    box-shadow: var(--box-shadow);
     height: 100vh;
     overflow-y: auto;
     display: none;
