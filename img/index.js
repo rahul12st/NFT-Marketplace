@@ -54,7 +54,7 @@ import founder3 from "./founder3.jpg";
 import founder4 from "./founder4.jpg";
 import upload from "./upload.png";
 import Loadergif from "./Loadergif.gif";
-import errorgif from "./error.gif";
+import errorgif from "./error.webp";
 import logo1 from "./logo1.png";
 import herolatest from "./herolatest.png";
 import cartt from "./cartt.gif";
