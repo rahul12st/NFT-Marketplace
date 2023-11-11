@@ -22,7 +22,7 @@ const NFTCardTwo = ({ NFTData }) => {
       setLikeInc(23 + 1);
     }
   };
-
+//nice
   return (
     <div className={Style.NFTCardTwo}>
       {NFTData?.map((el, i) => (
