@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
+<<<<<<< HEAD
   --icons-color: #e99a09; /* Vivid orange for icons */
   --icons-light-color: #f1cf09; /* Gold for icon highlights */
   --icons-bg-color: #121212; /* Dark gray background for icons */
@@ -9,6 +10,15 @@
   --shadow-light-color: #485460; /* Slightly lighter blue-gray for softer shadows */
   --main-bg-color: #020202;
 --overlay: #2323255e
+=======
+  --icons-color: #FFA500; /* Vivid orange for icons */
+  --icons-light-color: #FFD700; /* Gold for icon highlights */
+  --icons-bg-color: #121212; /* Dark gray background for icons */
+  --shadow-dark-color: #3d5c7d; /* Deep blue-gray for shadows */
+  --shadow-light-color: #485460; /* Slightly lighter blue-gray for softer shadows */
+  --main-bg-color: #1A1A1D;
+
+>>>>>>> 9d9ed5cf6357af5ad76dcf3653bd368d20732738
   --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color),
   -1rem -1rem 1rem var(--shadow-light-color);
 
