@@ -53,7 +53,7 @@ import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
 import founder4 from "./founder4.jpg";
 import upload from "./upload.png";
-import Loadergif from "./Loadergif.gif";
+import loadergif from "./loadergif.gif";
 import errorgif from "./error.webp";
 import logo1 from "./logo1.png";
 import herolatest from "./herolatest.png";
@@ -63,7 +63,7 @@ import NFTVideo3 from "./NFTVideo3.gif";
 
 
 export default {
-  Loadergif,
+  loadergif,
   logo1,
   upload,
   hero2,
