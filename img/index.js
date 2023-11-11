@@ -60,7 +60,7 @@ import herolatest from "./herolatest.png";
 import cartt from "./cartt.gif";
 import NFTVideo2 from "./NFTVideo2.gif";
 import NFTVideo3 from "./NFTVideo3.gif";
-import NFTVideo4 from "./NFTVideo4.gif";
+
 
 export default {
   Loadergif,
@@ -125,6 +125,6 @@ export default {
   errorgif,
   NFTVideo2,
   NFTVideo3,
-  NFTVideo4,
+
 
 };
