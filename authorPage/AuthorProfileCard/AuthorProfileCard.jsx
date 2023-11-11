@@ -19,7 +19,7 @@ import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
 import { Button } from "../../components/componentsindex.js";
 
-const AuthorProfileCard = () => {
+const AuthorProfileCard = (currentAccount) => {
   const [share, setShare] = useState(false);
   const [report, setReport] = useState(false);
 
@@ -64,7 +64,7 @@ const AuthorProfileCard = () => {
 
         <div className={Style.AuthorProfileCard_box_info}>
           <h2>
-            Dony Herrera{""}{" "}
+            Varinder Brar{"  "}{""}
             <span>
               <MdVerified />
             </span>{" "}
@@ -73,7 +73,7 @@ const AuthorProfileCard = () => {
           <div className={Style.AuthorProfileCard_box_info_address}>
             <input
               type="text"
-              value="0x829BD824B03D092293333..A830"
+              value={currentAccount}
               id="myInput"
             />
             <FiCopy
@@ -83,8 +83,8 @@ const AuthorProfileCard = () => {
           </div>
 
           <p>
-            Punk #4786 / An OG Cryptopunk Collector, hoarder of NFTs.
-            Contributing to @ether_cards, an NFT Monetization Platform.
+            Hidden NFT collector from Punjab.
+            Ethusiastic in ERC721 tokens for all the punjabi people.
           </p>
 
           <div className={Style.AuthorProfileCard_box_info_social}>
@@ -154,7 +154,7 @@ const AuthorProfileCard = () => {
                 <MdOutlineReportProblem />
               </span>{" "}
               {""}
-              Report abouse
+              Report abuse
             </p>
           )}
         </div>

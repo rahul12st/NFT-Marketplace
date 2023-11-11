@@ -6,10 +6,10 @@ import Image from "next/image";
 //INTERNAL IMPORT
 import Style from "./NFTCard.module.css";
 import images from "../../img";
-
-const NFTCard = () => {
-  const CardArray = [images.nft_image_1,images.nft_image_2,images.nft_image_3,images.nft_image_2,images.nft_image_1,images.nft_image_1,images.nft_image_2,images.nft_image_1,images.nft_image_2,images.nft_image_3,images.nft_image_2,images.nft_image_1,images.nft_image_1,images.nft_image_1
-    ];
+import Link from "next/link";
+const NFTCard = ({NFTData}) => {
+  //  const CardArray = [images.nft_image_1,images.nft_image_2,images.nft_image_3,images.nft_image_2,images.nft_image_1,images.nft_image_1,images.nft_image_2,images.nft_image_1,images.nft_image_2,images.nft_image_3,images.nft_image_2,images.nft_image_1,images.nft_image_1,images.nft_image_1
+  //   ];
 
   const [like, setLike] = useState(true);
 
@@ -23,11 +23,12 @@ const NFTCard = () => {
 
   return (
     <div className={Style.NFTCard}>
-      {CardArray.map((el, i) => (
-        <div className={Style.NFTCard_box} key={i + 1}>
+      {NFTData?.map((el, i) => (
+        <Link href={{pathname: "/NFT-details", query: el}}>
+           <div className={Style.NFTCard_box} key={i + 1}>
           <div className={Style.NFTCard_box_img}>
             <Image
-              src={el}
+              src={el.image}
               alt="NFT images"
               width={600}
               height={600}
@@ -63,14 +64,14 @@ const NFTCard = () => {
           <div className={Style.NFTCard_box_update_details}>
             <div className={Style.NFTCard_box_update_details_price}>
               <div className={Style.NFTCard_box_update_details_price_box}>
-                <h4>Clone #17373</h4>
+                <h4>{el.name} #{el.tokenId}</h4>
 
                 <div className={Style.NFTCard_box_update_details_price_box_box}>
                   <div
                     className={Style.NFTCard_box_update_details_price_box_bid}
                   >
                     <small>Current Bid</small>
-                    <p>1.000ETH</p>
+                    <p>{el.price}ETH</p>
                   </div>
                   <div
                     className={Style.NFTCard_box_update_details_price_box_stock}
@@ -85,6 +86,7 @@ const NFTCard = () => {
             </div>
           </div>
         </div>
+        </Link>
       ))}
     </div>
   );

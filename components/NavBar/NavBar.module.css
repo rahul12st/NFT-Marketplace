@@ -24,7 +24,7 @@
 }
 
 .navbar_container_left_box_input_box{
-    width: 60%;
+    width: 80%;
     border: 1px solid var(--icons-color);
     display: flex;
     align-items: center;
@@ -57,13 +57,22 @@
 .navbar_container_right_discover{
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 .navbar_container_right_help{
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
+.navbar_container_right_help:hover {
+    transform: scale(1.1); /* Adjust scale as needed for the desired zoom effect */
+}
+.navbar_container_right_discover:hover {
+    transform: scale(1.1); /* Adjust scale as needed for the desired zoom effect */
+}
 .navbar_container_right_discover_box,
+
 .navbar_container_right_help_box{
     position: absolute;
     padding: 1rem .5rem;
@@ -77,8 +86,11 @@
 .navbar_container_right_notify{
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
-
+.navbar_container_right_notify:hover {
+    transform: scale(1.1); /* Adjust scale as needed for the desired zoom effect */
+}
 .notify{
     font-size: 2rem;
 }
@@ -91,6 +103,10 @@
 .navbar_container_right_profile_box{
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar_container_right_profile_box:hover {
+    transform: scale(1.1); /* Adjust scale as needed for the desired zoom effect */
 }
 
 .navbar_container_right_profile{
@@ -113,7 +129,7 @@
     top: 0;
     width: 24rem;
     background-color: var(--main-bg-color);
-   /* box-shadow: var(--box-shadow);*/
+    box-shadow: var(--box-shadow);
     height: 100vh;
     overflow-y: auto;
     display: none;
@@ -123,6 +139,21 @@
 .sideBar::-webkit-scrollbar{
     display: none;
 }
+.logo{
+    height:21%;
+    width:21%;
+    margin-left: 14%;
+    margin-bottom: 13%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+/* Assuming your icon has a class named 'icon-zoom' */
+
+
+.logo:hover {
+    transform: scale(1.1); /* Adjust scale as needed for the desired zoom effect */
+}
+
 
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .navbar_container{

@@ -2,30 +2,33 @@
 
 .SearchBar{
     width: 100%;
+    
 }
 
 .SearchBar_box{
-    width: 40%;
+    width: 50%;
     margin:  0 auto;
     background-color: var(--main-bg-color);
     color: var(--main-bg-color);
     display: flex;
-    border-radius: 5rem;
+    border-radius: 6rem;
     align-items: center;
     margin-top: 8rem;
     margin-bottom: 3rem;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--icons-light-color);
 }
 
 .SearchBar_box_icon{
     font-size: 3rem;
-    padding: .5rem .8rem;
+    padding: 0.7rem .3rem;
     cursor: pointer;
     color: var(--icons-color)
 }
 
 .SearchBar_box input{
     width: 85%;
+    font-size: 1.3rem;
     border: 0;
     outline: 0;
     padding: 2rem;

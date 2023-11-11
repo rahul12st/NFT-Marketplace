@@ -7,12 +7,12 @@ import Style from "./Category.module.css";
 import images from "../../img";
 
 const Category = () => {
-  const CategoryArray = [images.creatorbackground1,images.creatorbackground2,images.creatorbackground3,images.creatorbackground4,images.creatorbackground5,images.creatorbackground6,images.creatorbackground7,images.creatorbackground8,images.creatorbackground9,images.creatorbackground9];
+  const CategoryArray = [images.creatorbackground1,images.creatorbackground2,images.creatorbackground3,images.creatorbackground4,images.creatorbackground5,images.creatorbackground6,images.creatorbackground7,images.creatorbackground8,images.creatorbackground9];
   return (
     <div className={Style.box_category}>
       <div className={Style.category}>
         {CategoryArray.map((el, i) => (
-          <div className={Style.category_box} key={1 + 1}>
+          <div className={Style.category_box} key={i + 1}>
             <Image
               src={el}
               className={Style.category_box_img}

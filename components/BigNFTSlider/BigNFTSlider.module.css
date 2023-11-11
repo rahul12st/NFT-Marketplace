@@ -11,11 +11,13 @@
     grid-column: 1 / 7;
     grid-row: 1 / -1;
     background-color: var(--main-bg-color);
-    box-shadow: var(--box-shadow-2);
+    /*box-shadow: var(--box-shadow-2);*/
     border-radius: 1rem;
     padding: 2rem;
     z-index: 1111;
     height: 90vh;
+    border-style: solid;
+  border-width: medium;
 }
 
 .bigNFTSlider_box_left h2{
@@ -28,9 +30,11 @@
     grid-row:  1 / -1;
     padding: 1rem;
     background-color: var(--main-bg-color);
+    border-style: solid;
+  border-width: medium;
     border-radius: 2.5rem;
-    box-shadow: var(--box-shadow-2);
-    /* box-shadow: var(--main-bg-color); */
+    /*box-shadow: var(--box-shadow-2);*/
+   /* box-shadow: var(--main-bg-color); */
 }
 
 /* //CREATOR SECTION */

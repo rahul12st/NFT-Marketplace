@@ -7,6 +7,8 @@
     overflow: hidden;
 transition:  all .3s ease-in;
     border-radius: 2rem;
+    border-style: solid;
+  border-width: medium;
 }
 
 .audioCard_box:hover{
@@ -76,6 +78,7 @@ transition:  all .3s ease-in;
     gap: 4rem;
     z-index: 1234;
     align-items: center;
+    
 }
 
 .audioCard_box_musicPlayer_icon{
@@ -87,6 +90,7 @@ transition:  all .3s ease-in;
     color: var(--main-bg-color);
     font-size: 2rem;
     cursor: pointer;
+    
 }
 
 .audioCard_box_img{
@@ -108,6 +112,7 @@ transition:  all .3s ease-in;
     border-top-right-radius: 2rem;
     padding: 2rem;
     line-height: .1;
+    
 }
 
 .audioCard_box_details_info h4{

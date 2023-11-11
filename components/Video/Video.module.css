@@ -23,11 +23,17 @@
 }
 
 .Video_box_frame{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 1rem;
-    padding: 5rem;
-    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #e99a09; /* Yellow background */
+    padding: 10px; /* Padding around the items */
+    box-sizing: border-box; /* Include padding in the container's width */
+    max-width: 100%; /* Prevents the container from exceeding the width of its parent */
+    overflow: hidden; 
+    gap: 20px;/* Hide any overflow */
+    border-radius: 23px;
 }
 
 .Video_box_frame_left{
@@ -36,7 +42,12 @@
 }
 
 .Video_box_frame_left_img{
-    border-radius: 1rem;
+    flex: 0 1 auto; /* Do not grow, allow shrinking, basis is auto */
+  margin: 10px; /* Margin around items */
+  max-width: calc(100% - 20px);
+   /* Adjust max width to account for margin and padding */
+   border-radius: 10px;
+    
 }
 
 .Video_box_frame_right{
@@ -70,3 +81,14 @@
         width: 100%;
     }
 }
+@media (min-width: 768px) {
+    .Video_box_frame_left_img{
+      max-width: calc(50% - 20px); /* Adjust for 2 items per row */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .Video_box_frame_left_img{
+      max-width: calc(33.333% - 20px); /* Adjust for 3 items per row */
+    }
+  }

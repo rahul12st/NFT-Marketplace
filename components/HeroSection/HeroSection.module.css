@@ -18,7 +18,12 @@
     font-size: 5rem;
     line-height: 1;
 }
-
+.heroSection_box_right{
+    transition: transform 0.3s ease-in-out;
+}
+.heroSection_box_right:hover {
+        transform: scale(1.1);
+}
 .heroSection_box_left p{
     margin-bottom:  2rem;
 }

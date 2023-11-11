@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect,useState,useContext } from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
+
 import {
   HeroSection,
   Service,
@@ -17,9 +18,34 @@ import {
   Slider,
   Brand,
   Video,
+  Loader,
 } from "../components/componentsindex";
 
+import { getTopCreators } from "../TopCreators/TopCreators";
+
+import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
+
 const Home = () => {
+  const {checkIfWalletConnected,currentAccount} = useContext(NFTMarketplaceContext);
+useEffect(()=>{
+  checkIfWalletConnected();
+},[]);
+
+const {fetchNFTs}= useContext(NFTMarketplaceContext);
+const[nfts, setNfts]= useState([]);
+const[nftsCopy, setNftsCopy]= useState([]);
+
+//creators list
+const creators= getTopCreators(nfts);
+useEffect(()=>{
+ // if(currentAccount){
+     fetchNFTs().then((items)=>{
+    setNfts(items);
+    setNftsCopy(items)
+    console.log(nfts);
+  });
+//}
+},[]);
   return (
     <div className={Style.homePage}>
       <HeroSection />
@@ -30,11 +56,14 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      <FollowerTab />
-      <Title
+      {creators.length == 0 ? (<Loader /> ) : ( <FollowerTab TopCreator={creators}  />
+      )}
+
+      <FollowerTab TopCreators={creators}/>
+      {/* <Title
         heading="Explore NFTs Video"
         paragraph="Discover the most beautiful videos."
-      />
+      /> */}
       <Slider />
       <Collection />
       <Title
@@ -42,7 +71,9 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      <NFTCard />
+<NFTCard NFTData={nfts} />
+          {nfts?.length ==0 ? <Loader /> : <NFTCard NFTData={nfts}/>}
+      
       <Title
         heading="Browse by category"
         paragraph="Explore the NFTs in the most featured categories."
