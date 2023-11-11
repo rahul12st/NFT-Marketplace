@@ -59,3 +59,4 @@ const reSellToken = () => {
   );
 };
 };
+export default reSellToken;

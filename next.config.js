@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
+  trailingSlash: true,
+  images: {
+    unoptimized: true, // Disable Next.js' default image optimization
+    domains: ["infura-ipfs.io",'rahul-nft-marketplace.infura-ipfs.io'] ,
+    formats: ["image/webp"],
+  },
 };
 
-module.exports = nextConfig;
 
-module.exports = {
-  images: {
-    domains: ["infura-ipfs.io",'rahul-nft-marketplace.infura-ipfs.io'],
-    formats: ["image/webp"]
-  },
-}
+
 
 
 

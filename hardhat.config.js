@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
+  defaultNetwork:"polygon_mumbai",
   solidity: "0.8.12",
   networks:{
     hardhat:{},
