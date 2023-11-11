@@ -44,14 +44,6 @@ const Video = () => {
               className={Style.Video_box_frame_left_img}
             />
 
-             <Image
-              src={images.NFTVideo4}
-              alt="Video image"
-              width={250}
-              height={250}
-              objectFit="cover"
-              className={Style.Video_box_frame_left_img}
-            />
           </div>
 
           <div className={Style.Video_box_frame_right}></div>
