@@ -10,34 +10,34 @@ const aboutus = () => {
   const founderArray = [
     {
       name: "Rahul Singh",
-      position: "Co-founder and Chief Executive",
+      position: "CEO",
       images: images.founder1,
     },
     {
-      name: "Danien Jame",
-      position: "Co-founder and Chief Executive",
+      name: "Ankit Bainpuriya",
+      position: "CTO",
       images: images.founder2,
     },
     {
-      name: "Orla Dwyer",
-      position: "Co-founder, Chairman",
+      name: "Raman Romania",
+      position: "Chairman",
       images: images.founder3,
     },
     {
-      name: "Dara Frazier",
-      position: "Co-Founder, Chief Strategy Officer",
+      name:"Sneha Meher",
+      position: "Chief Strategy Officer",
       images: images.founder4,
     },
   ];
 
   const factsArray = [
     {
-      title: "10 million",
+      title: "11 million",
       info: "Articles have been public around the world (as of Sept. 30, 2021)",
     },
     {
       title: "100,000",
-      info: "Registered users account (as of Sept. 30, 2021)",
+      info: "Registered users account (as of Sept. 30, 2023)",
     },
     {
       title: "220+",
@@ -57,14 +57,14 @@ const aboutus = () => {
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
-            <Image src={images.hero2} />
+            <Image src={images.logo1} />
           </div>
         </div>
 
         <div className={Style.aboutus_box_title}>
-          <h2>⛱ Founder</h2>
+          <h2>⛱ Founders</h2>
           <p>
-            We’re impartial and independent, and every day we create
+            We're impartial and independent, and every day we create
             distinctive, world-class programmes and content
           </p>
         </div>
