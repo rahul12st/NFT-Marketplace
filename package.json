@@ -11,6 +11,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "@pinata/sdk": "^2.1.0",
+    "@vercel/analytics": "^1.1.1",
     "axios": "^0.27.2",
     "dotenv": "^16.3.1",
     "ether": "^0.0.9",

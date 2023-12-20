@@ -12,6 +12,7 @@ const MyApp = ({Component, pageProps }) =>(
     <Component {...pageProps} />
     <Footer />
     </NFTMarketplaceProvider>
+    <Analytics />
 </div>
 );
 
