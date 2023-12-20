@@ -5,7 +5,7 @@ const cors = require("cors");
 import Style from "../styles/index.module.css";
 app.use(
   cors({
-    origin: "https://nftbazaar.vercel.app/",
+    origin: "https://nftbazaar.vercel.app",
   })
 );
 import {
