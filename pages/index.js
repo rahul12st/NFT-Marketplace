@@ -1,8 +1,13 @@
 import React, { useEffect,useState,useContext } from "react";
+//const cors = require("cors");
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
-
+// app.use(
+//   cors({
+//     origin: "https://nftbazaar.vercel.app",
+//   })
+// );
 import {
   HeroSection,
   Service,
