@@ -80,8 +80,8 @@ const aboutus = () => {
                   height={500}
                   className={Style.aboutus_box_founder_box_img_img}
                 />
-                <h3>{el.name}</h3>
-                <p>{el.position}</p>
+                <h2>{el.name}</h2>
+                <h2>{el.position}</h2>
               </div>
             ))}
           </div>
