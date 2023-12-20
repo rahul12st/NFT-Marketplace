@@ -13,6 +13,7 @@
     "@pinata/sdk": "^2.1.0",
     "@vercel/analytics": "^1.1.1",
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "ether": "^0.0.9",
     "form-data": "^4.0.0",
